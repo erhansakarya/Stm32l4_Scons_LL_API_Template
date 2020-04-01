@@ -1,0 +1,1 @@
+openocd -f board/st_nucleo_l476rg.cfg -c "init; reset halt; flash write_image erase main.bin 0x08000000; reset run; shutdown"
